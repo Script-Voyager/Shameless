@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAMELESS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="js/card.js"></script>
+</head>
+
+<body>
+    <a class="btn-up" id="btn-up" tabindex="0">
+        <svg width="20" height="10" viewbox="0 0 20 10" class="btn-up-icon" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <use xlink:href="img/icons.svg#header-nav-icon"></use>
+        </svg>
+    </a>
+    <header class="header">
+        <div class="header-position">
+            <div class="container-fluid container-limit header--pd">
+                <div class="header-block flex">
+                    <a href="index.html" class="header-logo link">
+                        <svg width="262" height="32" viewbox="0 0 262 32" class="header-logo-box"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons.svg#header-logo"></use>
+                        </svg>
+                    </a>
+                    <nav class="header-nav">
+                        <ul class="list-reset header-nav-list flex">
+                            <li class="header-nav-list-item">
+                                <a href="new.html"
+                                    class="link header-nav-list-item__link link--color link--effects">Новинки</a>
+                            </li>
+                            <li class="header-nav-list-item header-nav-list-item--btn">
+                                <button class="btn-reset header-nav-list-item__btn">
+                                    <span class="header-nav-list-item__text link--color link--effects">Женское</span>
+                                    <svg width="20" height="10" viewbox="0 0 20 10" class="header-nav-icon"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="img/icons.svg#header-nav-icon"></use>
+                                    </svg>
+                                </button>
+                                <div class="content-menu">
+                                    <ul class="list-reset content-menu-list">
+                                        <li class="content-menu-list-item">
+                                            <a href="d.s.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Платья
+                                                и
+                                                сарафаны</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="costume.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Костюмы</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="longshirts.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Лонгсливы</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="sport.pants.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Спортивные
+                                                брюки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="tops.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Топы</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="sweaters.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Толстовки,
+                                                свитшоты,
+                                                худи</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="t-shirts.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Футболки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="skirts.w.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Юбки</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-nav-list-item header-nav-list-item--btn">
+                                <button class="btn-reset header-nav-list-item__btn">
+                                    <span class="header-nav-list-item__text link--color link--effects">Мужское</span>
+                                    <svg width="22" height="12" viewbox="0 0 22 12" class="header-nav-icon"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="img/icons.svg#header-nav-icon"></use>
+                                    </svg>
+                                </button>
+                                <div class="content-menu">
+                                    <ul class="list-reset content-menu-list">
+                                        <li class="content-menu-list-item">
+                                            <a href="costume.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Костюмы</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="jackets.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Пиджаки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="shirts.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Рубашки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="sport.pants.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Спортивные
+                                                брюки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="sweaters.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Толстовки,
+                                                свитшоты,
+                                                худи</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="t-shirts.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Футболки</a>
+                                        </li>
+                                        <li class="content-menu-list-item">
+                                            <a href="shorts.m.html"
+                                                class="link content-menu-list-item__link link--color link--effects">Шорты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="sale.html"
+                                    class="link header-nav-list-item__link link--color link--effects">Sale</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="accessories.html"
+                                    class="link header-nav-list-item__link link--color link--effects">Аксессуары</a>
+                            </li>
+                            <li class="header-nav-list-item">
+                                <a href="about.html" class="link header-nav-list-item__link link--color link--effects">О
+                                    нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-link-icons-right flex">
+                        <a href="#" class="header-link-icons-shop link">
+                            <svg width="37" height="32" viewbox="0 0 37 32" class="header-icons-shop-box"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#header-shop"></use>
+                            </svg>
+                        </a>
+                        <button class="btn-reset header-link-icons-burger-btn burger--btn" id="burger-open">
+                            <svg width="37" height="32" viewbox="0 0 37 32" class="header-icons-burger-box"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#burger"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-burger" id="burger-menu">
+                <div class="header-burger-btn-close flex">
+                    <button class="btn-reset header-burger-btn__close burger--btn" id="burger-close">
+                        <svg width="16" height="16" viewbox="0 0 16 16" class="header-burger-close-icon-box"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons.svg#btn-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="header-burger-nav-flex">
+                    <nav class="header-burger-nav flex">
+                        <ul class="list-reset header-burger-nav-list">
+                            <li class="header-burger-nav-list__item">
+                                <button class="btn-reset header-burger-nav-list-btn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <span class="header-burger-nav-btn__title link--color">Женское</span>
+                                </button>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="header-burger-card flex">
+                                        <ul class="list-reset header-burger-card-list">
+                                            <li class="header-burger-card-list-item">
+                                                <a href="d.s.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Платья и
+                                                    сарафаны</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="costume.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Костюмы</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="longshirts.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Лонгсливы</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="sport.pants.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Спортивные
+                                                    брюки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="tops.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Топы</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="sweaters.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Толстовки,
+                                                    свитшоты,
+                                                    худи</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="t-shirts.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Футболки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="skirts.w.html"
+                                                    class="link header-burger-card-list-item__link link--color">Юбки</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <button class="btn-reset header-burger-nav-list-btn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                    <span class="header-burger-nav-btn__title link--color">Мужское</span>
+                                </button>
+                                <div class="collapse" id="collapseExample2">
+                                    <div class="header-burger-card flex">
+                                        <ul class="list-reset header-burger-card-list">
+                                            <li class="header-burger-card-list-item">
+                                                <a href="costume.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Костюмы</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="jackets.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Пиджаки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="shirts.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Рубашки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="sport.pants.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Спортивные
+                                                    брюки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="sweaters.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Толстовки,
+                                                    свитшоты,
+                                                    худи</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="t-shirts.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Футболки</a>
+                                            </li>
+                                            <li class="header-burger-card-list-item">
+                                                <a href="shorts.m.html"
+                                                    class="link header-burger-card-list-item__link link--color">Шорты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="new.html" class="link header-burger-nav-list__link link--color">Новинки</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="sale.html" class="link header-burger-nav-list__link link--color">Sale</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="about.html" class="link header-burger-nav-list__link link--color">о бренде</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="accessories.html"
+                                    class="link header-burger-nav-list__link link--color">Аксессуары</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="certificate.html"
+                                    class="link header-burger-nav-list__link link--color">Подарочные
+                                    сертификаты</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="buy.html" class="link header-burger-nav-list__link link--color">Оплата и
+                                    доставка</a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="returns.html" class="link header-burger-nav-list__link link--color">Обмен и
+                                    возврат </a>
+                            </li>
+                            <li class="header-burger-nav-list__item">
+                                <a href="family.html" class="link header-burger-nav-list__link link--color">Shameless
+                                    family</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-burger-social flex">
+                        <button class="btn-reset header-burger-social__btn">
+                            <svg width="22" height="14" viewbox="0 0 22 14" class="header-burger-social-btn-icon"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#burger-vk"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-reset header-burger-social__btn">
+                            <svg width="36" height="36" viewbox="0 0 36 36" class="header-burger-social-btn-icon"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#burger-tg"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-reset header-burger-social__btn">
+                            <svg width="20" height="20" viewbox="0 0 20 20" class="header-burger-social-btn-icon"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#burger-tiktok"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header-burger-info">
+                        <span class="header-burger-info__descr">C 2021 SHAMELESS. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="menucard">
+            <ul class="list-reset menucard-list elem flex">
+                <li class="menucard-list-item">
+                    <button onclick="document.location='new.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/1.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">Новинки</span>
+                    </button>
+                </li>
+                <li class="menucard-list-item">
+                    <button onclick="document.location='women.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/2.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">Женское</span>
+                    </button>
+                </li>
+                <li class="menucard-list-item">
+                    <button onclick="document.location='men.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/3.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">Мужское</span>
+                    </button>
+                </li>
+                <li class="menucard-list-item">
+                    <button onclick="document.location='sale.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/4.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">Sale</span>
+                    </button>
+                </li>
+                <li class="menucard-list-item">
+                    <button onclick="document.location='accessories.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/5.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">Аксессуары</span>
+                    </button>
+                </li>
+                <li class="menucard-list-item">
+                    <button onclick="document.location='about.html'" class="btn-reset menucard-list-item__btn">
+                        <img class="menucard-list-item__picture" src="img/menucard/6.webp" alt="Picture.webp">
+                        <span class="menucard-list-item__title">О нас</span>
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section class="hero section-offset">
+            <div class="container-fluid container-limit">
+                <div class="row hero-row">
+                    <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-12 col-12 hero-left-col flex">
+                        <div class="hero-tabs-content">
+                            <div class="hero-tabs-item tabs-item--active" data-target="cacao-one">
+                                <button class="btn-reset tabs-item-btn tabs--effects">
+                                    <img src="img/Платье Shameless/черное/1.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic">
+                                </button>
+                            </div>
+                            <div class="hero-tabs-item" data-target="cacao-two">
+                                <button class="btn-reset tabs-item-btn tabs--effects">
+                                    <img src="img/Платье Shameless/черное/2.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic">
+                                </button>
+                            </div>
+                            <div class="hero-tabs-item" data-target="cacao-three">
+                                <button class="btn-reset tabs-item-btn tabs--effects">
+                                    <img src="img/Платье Shameless/черное/3.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic">
+                                </button>
+                            </div>
+                            <div class="hero-tabs-item" data-target="cacao-four">
+                                <button class="btn-reset tabs-item-btn tabs--effects">
+                                    <img src="img/Платье Shameless/черное/4.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic">
+                                </button>
+                            </div>
+                            <div class="hero-tabs-item" data-target="cacao-five">
+                                <button class="btn-reset tabs-item-btn tabs--effects">
+                                    <img src="img/Платье Shameless/черное/5.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="list-reset hero-tabs-list flex">
+                            <li class="hero-tabs-list__item">
+                                <button class="btn-reset hero-tabs-list__btn tabs--effects hero-tabs-list__btn--active"
+                                    data-path="cacao-one">
+                                    <img src="img/Платье Shameless/черное/1.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic--sm">
+                                </button>
+                            </li>
+                            <li class="hero-tabs-list__item">
+                                <button class="btn-reset hero-tabs-list__btn tabs--effects hero-tabs-list__btn--active"
+                                    data-path="cacao-two">
+                                    <img src="img/Платье Shameless/черное/2.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic--sm">
+                                </button>
+                            </li>
+                            <li class="hero-tabs-list__item">
+                                <button class="btn-reset hero-tabs-list__btn tabs--effects hero-tabs-list__btn--active"
+                                    data-path="cacao-three">
+                                    <img src="img/Платье Shameless/черное/3.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic--sm">
+                                </button>
+                            </li>
+                            <li class="hero-tabs-list__item">
+                                <button class="btn-reset hero-tabs-list__btn tabs--effects hero-tabs-list__btn--active"
+                                    data-path="cacao-four">
+                                    <img src="img/Платье Shameless/черное/4.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic--sm">
+                                </button>
+                            </li>
+                            <li class="hero-tabs-list__item">
+                                <button class="btn-reset hero-tabs-list__btn tabs--effects hero-tabs-list__btn--active"
+                                    data-path="cacao-five">
+                                    <img src="img/Платье Shameless/черное/5.webp" alt="Picture.webp" class="hero-tabs-item-btn__pic--sm">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12 hero-right-col">
+                        <h1 class="section-title-h1 hero-title">Платье Shameless</h1>
+                        <span class="hero-artikul hero--fontsize">Артикул: 001/1</span>
+                        <span class="hero-price hero--fontsize"><strong class="hero-price__sale">4 490 ₽</strong> / шт.
+                            <span class="hero-price__line">7 500 ₽</span> </span>
+                        <div class="hero-color">
+                            <span class="hero-color-title hero--fontsize">Цвет</span>
+                            <div class="hero-color-block flex">
+                                <button onclick="document.location='#'"
+                                    class="btn-reset hero-color-block__item item--black"></button>
+                                <button onclick="document.location='d.sh.w.r.html'"
+                                    class="btn-reset hero-color-block__item item--raspberry"></button>
+                            </div>
+                        </div>
+                        <div class="hero-size">
+                            <span class="hero-size-title hero--fontsize">Размер:</span>
+                            <div class="hero-size-item flex">
+                                <span class="section-descr hero-size-item__descr">XS</span>
+                                <span class="section-descr hero-size-item__descr">S</span>
+                                <span class="section-descr hero-size-item__descr">M</span>
+                            </div>
+                        </div>
+                        <div class="hero-size-box">
+                            <button class="btn-reset hero-size-box-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample3">
+                                <span class="hero-size-box-btn__title hero--fontsize link--effects">Размерная
+                                    сетка</span>
+                                <svg width="22" height="12" viewbox="0 0 22 12" class="hero-size-box-btn__icon"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <use xlink:href="img/icons.svg#header-nav-icon"></use>
+                                </svg>
+                            </button>
+                            <div class="collapse" id="collapseExample3">
+                                <table class="hero-size-box-table">
+                                    <tr class="hero-size-box-table-tr">
+                                        <td class="hero-size-box-table-tr__none table--pd"></td>
+                                        <td class="hero-size-box-table-tr__cap-up table--pd">XS-S</td>
+                                        <td class="hero-size-box-table-tr__cap-up table--pd">S-M</td>
+                                        <td class="hero-size-box-table-tr__cap-up table--pd">М-L</td>
+                                    </tr>
+                                    <tr class="hero-size-box-table-tr">
+                                        <td class="hero-size-box-table-tr__cap-left table--pd">Обхват груди</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">78-84 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">84-90 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">90-96 см</td>
+                                    </tr>
+                                    <tr class="hero-size-box-table-tr">
+                                        <td class="hero-size-box-table-tr__cap-left table--pd">Обхват талии</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">58-64 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">64-70 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">70-76 см</td>
+                                    </tr>
+                                    <tr class="hero-size-box-table-tr">
+                                        <td class="hero-size-box-table-tr__cap-left table--pd">Обхват бедер</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">86-92 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">92-98 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">98-104 см</td>
+                                    </tr>
+                                    <tr class="hero-size-box-table-tr">
+                                        <td class="hero-size-box-table-tr__cap-left table--pd">Длина платья</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">120 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">125 см</td>
+                                        <td class="hero-size-box-table-tr__text table--pd">130 см</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="hero-size-box-text">
+                                <span class="hero-size-box-text__title hero--fontsize">Рост модели:</span>
+                                <span class="hero-size-box-text__growth">165 см, размер XS</span>
+                            </div>
+                        </div>
+                        <div class="hero-text-up">
+                            <button class="btn-reset hero-text-up-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample4" aria-expanded="false"
+                                aria-controls="collapseExample4">
+                                <span class="hero-text-up-btn__cap hero--fontsize link--effects">Описание</span>
+                                <svg width="22" height="12" viewbox="0 0 22 12" class="hero-text-up-btn__icon"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <use xlink:href="img/icons.svg#header-nav-icon"></use>
+                                </svg>
+                            </button>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="hero-text-up-el flex">
+                                    <ul class="hero-text-up-el-list">
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">почувствуй
+                                                роскошь</span>
+                                        </li>
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">мягкая и
+                                                приятная к телу ткань</span>
+                                        </li>
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">регулируемый
+                                                вырез на ноге</span>
+                                        </li>
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">выразительный
+                                                силуэт</span>
+                                        </li>
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">складки/сборки,
+                                                скрывающие недостатки</span>
+                                        </li>
+                                        <li class="hero-text-up-el-list-item">
+                                            <span class="section-descr hero-text-up-el-list-item__descr">регулируемые
+                                                лямки, можно носить крест-накрест</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-text-midle">
+                            <h2 class="section-title hero-text-midle__title hero--fontsize">Уход за изделием:</h2>
+                            <p class="section-descr hero-text-midle__descr">
+                                Просьба отказаться от машинной стирки. Только ручная стирка 30 градусов или в холодной воде.
+                            </p>
+                        </div>
+                        <div class="hero-text-down">
+                            <h3 class="section-caption hero-text-down__caption hero--fontsize">Состав:</h3>
+                            <span class=" section-descr hero-text-down__descr">100% шёлк Armani (PE)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hero-row--info">
+                <div class="col-12">
+                    <div class="hero-info-pay flex">
+                        <h2 class="section-title hero-info-pay__title">Заказ и оплата товара</h2>
+                        <p class="section-descr hero-info-pay__descr">
+                            Для оформления заказа и оплаты товара свяжитесь с нами через<br> <strong>Whats App</strong>
+                            <a href="https://api.whatsapp.com/send?phone=79818756518" target="_blank"
+                                class="link-reset link hero-info-pay__link link--color ">+7 981 875 65 18</a>
+                        </p>
+                        <a href="https://api.whatsapp.com/send?phone=79818756518" target="_blank"
+                            class="link-reset link hero-info-pay__btn">Whats App</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="loop section-offset subscribe--bg">
+            <div class="container-fluid container-limit loop--pd flex">
+                <div class="loop-item flex">
+                    <svg width="60" height="40" viewbox="0 0 60 40" class="loop-item__icon"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons.svg#shipping-icon"></use>
+                    </svg>
+                    <span class="section-title loop-item__title">Бесплатная
+                        доставка<br>от 10 000 ₽</span>
+                </div>
+                <div class="loop-item flex">
+                    <svg width="58" height="60" viewbox="0 0 58 60" class="loop-item__icon"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons.svg#certificate-icon"></use>
+                    </svg>
+                    <span class="section-title loop-item__title">Подарочные сертификаты</span>
+                </div>
+                <div class="loop-item flex">
+                    <svg width="64" height="56" viewbox="0 0 64 56" class="loop-item__icon"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="img/icons.svg#family-icon"></use>
+                    </svg>
+                    <span class="section-title loop-item__title">Shameless family</span>
+                </div>
+            </div>
+        </section>
+        <section class="mightlikeit section-offset">
+            <div class="container-fluid container-limit">
+                <h2 class="section-title mightlikeit-title">Может понравиться</h2>
+                <div class="row mightlikeit-block">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="swiper mightlikeit-swiper">
+                            <div class="swiper-wrapper mightlikeit-swiper-wrapper">
+                                <button onclick="document.location='c.w.m.w.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Костюм
+                                            Warm
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/1.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='hs.b.s.w.M.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Косынка
+                                            Bad school
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/2.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='s.hs.w.b.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">
+                                            Комплект Bad
+                                            school
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/3.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='c.c.w.c.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Костюм
+                                            Censored
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/4.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='c.w.w.w.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Костюм
+                                            Warm
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/5.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='d.sh.w.b.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Платье
+                                            Shameless
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/6.webp" alt="Picture.webp">
+                                </button>
+                                <button onclick="document.location='c.c.w.b.html'"
+                                    class="btn-reset swiper-slide mightlikeit-swiper-wrapper-btn">
+                                    <div class="mightlikeit-swiper--box-shadow">
+                                        <h3 class="section-caption mightlikeit-swiper-wrapper-btn__caption flex">Костюм
+                                            Censored
+                                        </h3>
+                                    </div>
+                                    <img src="img/mightlikeit/7.webp" alt="Picture.webp">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev mightlikeit-swiper-button-prev"></div>
+                    <div class="swiper-button-next mightlikeit-swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer-acc">
+                <ul class="list-reset footer-acc-list" id="footer-accordion">
+                    <li class="footer-acc-list-item">
+                        <div class="footer-acc-list-item__title">
+                            <button class="btn-reset footer-acc-list-item__btn flex">
+                                <h3 class="section-title footer-accordion-title">Информация</h3>
+                                <svg width="27" height="12" viewbox="0 0 27 12" class="footer-accordion-icon-box"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <use xlink:href="img/icons.svg#acco-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="footer-acc-content flex">
+                            <ul class=" list-reset footer-acc-list">
+                                <li class="footer-acc-list-item">
+                                    <a href="index.html"
+                                        class="link footer-acc-list-item__link link--color ">Главная</a>
+                                </li>
+                                <li class="footer-acc-list-item">
+                                    <a href="rules.html" class="link footer-acc-list-item__link link--color ">Условия
+                                        оплаты</a>
+                                </li>
+                                <li class="footer-acc-list-item">
+                                    <a href="buy.html" class="link footer-acc-list-item__link link--color ">Оплата и
+                                        доставка</a>
+                                </li>
+                                <li class="footer-acc-list-item">
+                                    <a href="returns.html" class="link footer-acc-list-item__link link--color ">Обмен и
+                                        возврат</a>
+                                </li>
+                                <li class="footer-acc-list-item">
+                                    <a href="privacy.html"
+                                        class="link footer-acc-list-item__link link--color ">Конфидециальность
+                                        и
+                                        файлы
+                                        cookie</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-container">
+                <div class="footer-block-up flex">
+                    <div class="footer-block-up-info">
+                        <h2 class="section-title footer-title">Информация</h2>
+                        <ul class=" list-reset footer-block-up-info-list">
+                            <li class="footer-block-up-info-list-item">
+                                <a href="index.html"
+                                    class="link footer-block-up-info-list-item__link link--color">Главная</a>
+                            </li>
+                            <li class="footer-block-up-info-list-item">
+                                <a href="rules.html"
+                                    class="link footer-block-up-info-list-item__link link--color">Условия
+                                    оплаты</a>
+                            </li>
+                            <li class="footer-block-up-info-list-item">
+                                <a href="buy.html" class="link footer-block-up-info-list-item__link link--color">Оплата
+                                    и
+                                    доставка</a>
+                            </li>
+                            <li class="footer-block-up-info-list-item">
+                                <a href="returns.html"
+                                    class="link footer-block-up-info-list-item__link link--color">Обмен и
+                                    возврат</a>
+                            </li>
+                            <li class="footer-block-up-info-list-item">
+                                <a href="privacy.html"
+                                    class="link footer-block-up-info-list-item__link link--color">Конфидециальность и
+                                    файлы
+                                    cookie</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-block-up-logo">
+                        <a href="index.html" class="footer-block-up-logo__link">
+                            <svg width="302" height="186" viewbox="0 0 302 186" class="footer-logo-icon-box"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#footer-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer-block-up-subscribe flex">
+                        <a href="https://accounts.google.com/signin/v2/identifier?hl=RU&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                            class="link footer-block-up-subscribe__link-mail link--color" target="_blank">
+                            <svg width="24" height="20" viewbox="0 0 24 20"
+                                class="footer-block-up-subscribe__link-mail-icon" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use xlink:href="img/icons.svg#footer-mail"></use>
+                            </svg>
+                            shameless.bw@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-block-middle flex">
+                    <div class="footer-block-middle-social">
+                        <ul class="list-reset footer-block-middle-social-list flex">
+                            <li class="footer-block-middle-social-list__item">
+                                <a href="https://vk.com/shameless7bwear" target="_blank"
+                                    class="footer-block-middle-social-list__link">
+                                    <svg width="44" height="44" viewbox="0 0 44 44"
+                                        class="footer-block-middle-social-list__box" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="img/icons.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-block-middle-social-list__item">
+                                <a href="http://t.me/shameless0brandwear" target="_blank"
+                                    class="footer-block-middle-social-list__link">
+                                    <svg width="44" height="44" viewbox="0 0 44 44"
+                                        class="footer-block-middle-social-list__box" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <use xlink:href="img/icons.svg#tg"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-block-middle-social-list__item">
+                                <a href="#" target="_blank" class="footer-block-middle-social-list__link">
+                                    <svg class="footer-block-middle-social-list__svg" width="43" height="43"
+                                        viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="43" height="43" rx="1.5"
+                                            fill="url(#paint0_linear_425_404)" stroke="#3B3B3B" />
+                                        <path
+                                            d="M25.6703 14H23.1424V24.2174C23.1424 25.4348 22.1701 26.4348 20.9602 26.4348C19.7502 26.4348 18.7779 25.4348 18.7779 24.2174C18.7779 23.0217 19.7286 22.0435 20.8954 22V19.4348C18.3242 19.4782 16.25 21.587 16.25 24.2174C16.25 26.8696 18.3674 29 20.9818 29C23.5961 29 25.7135 26.8478 25.7135 24.2174V18.9782C26.6642 19.6739 27.8309 20.087 29.0625 20.1087V17.5435C27.1612 17.4783 25.6703 15.913 25.6703 14Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_425_404" x1="43" y1="0" x2="0" y2="43"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#32ECE8" />
+                                                <stop offset="1" stop-color="#F31862" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-block-down flex">
+                    <div class="footer-block-down-text">
+                        <span class="footer-block-down-text__item">c 2021 SHAMELESS. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</span>
+                    </div>
+                    <div class="footer-block-down-money flex">
+                        <svg width="25" height="17" viewbox="0 0 25 17" class="icon-box5"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons.svg#mastercard"></use>
+                        </svg>
+                        <svg width="34" height="11" viewbox="0 0 34 11" class="icon-box5"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="img/icons.svg#visa"></use>
+                        </svg>
+                        <svg width="35" height="10" viewBox="0 0 35 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.43163 1.90386e-07V0.00436865C9.42731 0.00436865 8.06406 0 7.70053 1.31479C7.36729 2.52038 6.42817 5.84741 6.4022 5.93914H6.14254C6.14254 5.93914 5.18177 2.53786 4.84421 1.31042C4.48067 -0.00436844 3.1131 1.90386e-07 3.1131 1.90386e-07H0V10H3.11455V4.06082H3.37421L5.19187 9.99995H7.35431L9.17197 4.06518H9.43163V9.99995H12.5462V1.90386e-07H9.43163ZM20.8093 1.90386e-07C20.8093 1.90386e-07 19.8962 0.0829932 19.4677 1.04839L17.262 5.93914H17.0023V1.90386e-07H13.8878V10H16.8292C16.8292 10 17.7857 9.91264 18.2141 8.95166L20.3766 4.06086H20.6362V10H23.7508V1.90386e-07H20.8093ZM25.1356 4.54135V10H28.2502V6.81275H31.6244C33.0959 6.81275 34.3408 5.86488 34.8039 4.54281H25.1356V4.54135Z"
+                                fill="#4DB45E" />
+                            <path
+                                d="M31.6258 0H24.6985C25.0448 1.90448 26.4599 3.43186 28.2891 3.92982C28.7137 4.04591 29.1518 4.10468 29.5917 4.10459H34.9308C34.9784 3.87745 35 3.64594 35 3.40569C35 1.52446 33.4897 0 31.6258 0Z"
+                                fill="url(#paint0_linear_425_418)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_425_418" x1="24.6985" y1="2.05229" x2="35"
+                                    y2="2.05229" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.3" stop-color="#00B4E6" />
+                                    <stop offset="1" stop-color="#088CCB" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
